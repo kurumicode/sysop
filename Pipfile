@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+flask = "*"
+requests = '*'
+jsonify = "*"
+jsonschema = "*"
+flask-sqlalchemy = "*"
+sqlalchemy = "*"
+pytest = "*"
+psycopg2 = "*"
+schedule = "*"
+gunicorn = "*"
+yapf = "*"
+
+[requires]
+python_version = "3.7"
