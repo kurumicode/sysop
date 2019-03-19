@@ -1,4 +1,4 @@
-from logging_config import with_logging
+from logging_config import with_logging, logging
 import requests
 import json
 from datetime import datetime
@@ -21,4 +21,4 @@ def generate_auto_review():
             problems.sort(key=lambda p: datetime.strptime(p['date_last_solved'], "%m/%d/%Y"))
             # sort the problems with timestamps
             for p in problems[:5]:
-                print(p)
+                logging.info(p)
